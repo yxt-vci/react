@@ -4,6 +4,7 @@ import {add,addSync} from '../redux/Action'
 import '../../css/news.scss'
 
 class PlayNews extends Component {
+  
   handleClick = ()=>{
     const {dispatch} = this.props;
     console.log(dispatch(add(3))); //同步也可以这种dispatch也可以app那种dispatch
