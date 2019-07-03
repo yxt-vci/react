@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import {add,addSync} from '../redux/Action'
+import '../../css/news.scss'
 
 class PlayNews extends Component {
   handleClick = ()=>{
@@ -12,7 +13,7 @@ class PlayNews extends Component {
     return (
       <div>
         <p onClick={this.handleClick}>点击娱乐新闻内容</p>
-        <p>{this.props.count}</p>
+        <p className="count">{this.props.count}</p>
       </div>
     )
   }
